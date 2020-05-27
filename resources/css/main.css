@@ -3,6 +3,13 @@
     padding: 0;
 }
 
+.info{
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    top: 50px;
+}
+
 .page-1{
     width: 100%;
     height: 200%;
