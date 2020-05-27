@@ -3,7 +3,7 @@ $(document).ready(function(){
 
     // $('.info').text(toggle);
 
-    var eTop = $('#btn').offset().top;
+    // var eTop = $('#btn').offset().top;
 
     // $(window).scroll(function() {
     //     $('.info').text('');
@@ -11,10 +11,9 @@ $(document).ready(function(){
 
     // $('.button').css('top', 'calc(' + viewportHeight + ' - 80px)');
     
-    $('.info').click(function(){
-        $('.info').text(window.scrollY + window.innerHeight);
-        var pos = window.scrollY + window.innerHeight - 60;
-        $('#btn').css('top', pos + 'px');
-        $('#btn').toggle();
+    $('#toggle-btn').click(function(){
+        var pos = window.scrollY + window.innerHeight - 120;
+        $('#dialog').css('top', pos + 'px');
+        $('#dialog').toggle();
     });
   });
