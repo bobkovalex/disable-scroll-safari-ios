@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    var viewportHeight = $(window).height();
+    var viewportHeight = window.innerHeight;
     $('.info').text(viewportHeight);
 
     $('.main-container').scroll(function() {

@@ -10,16 +10,18 @@
     top: 50px;
 }
 
-.page-1{
+.main-container{
     width: 100%;
     height: 200%;
 }
 
-.main-container{
-    height: 100vh;
+.page-1{
     width: 100%;
+    height: 100vh;
     background-color: #ccc;
 }
+
+
 
 .button{
     background-color: #494949;
