@@ -1,1 +1,3 @@
-# test
+---
+permalink: /index.html
+---
