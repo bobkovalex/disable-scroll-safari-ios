@@ -21,15 +21,13 @@
     background-color: #ccc;
 }
 
-
-
 .button{
     background-color: #494949;
     color: #fff;
     width: 200px;
     padding: 20px;
-    /* top: calc(100vh - 80px); */
     margin: auto;
     text-align: center;
-    position: relative;
+    position: absolute;
+    display: none;
 }

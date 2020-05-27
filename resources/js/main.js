@@ -1,12 +1,20 @@
 $(document).ready(function(){
     var viewportHeight = window.innerHeight;
-    $('.info').text(viewportHeight);
+
+    // $('.info').text(toggle);
+
     var eTop = $('#btn').offset().top;
 
-    $(window).scroll(function() {
-        $('.info').text(viewportHeight);
-    });
+    // $(window).scroll(function() {
+    //     $('.info').text('');
+    // });
 
     // $('.button').css('top', 'calc(' + viewportHeight + ' - 80px)');
-    $('#btn').css('top', viewportHeight - 80 + 'px');
+    
+    $('.info').click(function(){
+        $('.info').text(window.scrollY + window.innerHeight);
+        var pos = window.scrollY + window.innerHeight - 60;
+        $('#btn').css('top', pos + 'px');
+        $('#btn').toggle();
+    });
   });
