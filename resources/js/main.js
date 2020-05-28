@@ -10,9 +10,9 @@ $(document).ready(function(){
     // });
 
     // $('.button').css('top', 'calc(' + viewportHeight + ' - 80px)');
-    
+    // window.scrollY + 
     $('#toggle-btn').click(function(){
-        var pos = window.scrollY + window.innerHeight - 120;
+        var pos = window.innerHeight - 120;
         $('#dialog').css('top', pos + 'px');
         $('#dialog').toggle();
     });
