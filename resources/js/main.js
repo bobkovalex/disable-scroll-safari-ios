@@ -10,10 +10,11 @@ $(document).ready(function(){
     // });
 
     // $('.button').css('top', 'calc(' + viewportHeight + ' - 80px)');
-    // window.scrollY + 
+    
     $('#toggle-btn').click(function(){
-        var pos = window.innerHeight - 120;
+        var pos = window.scrollY + window.innerHeight - $('#dialog').height();
         $('#dialog').css('top', pos + 'px');
+        $('#overlay').toggle();
         $('#dialog').toggle();
     });
   });
