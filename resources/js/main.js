@@ -1,20 +1,20 @@
 $(document).ready(function(){
-    var viewportHeight = window.innerHeight;
-
-    // $('.info').text(toggle);
-
-    // var eTop = $('#btn').offset().top;
-
-    // $(window).scroll(function() {
-    //     $('.info').text('');
-    // });
-
-    // $('.button').css('top', 'calc(' + viewportHeight + ' - 80px)');
     
-    $('#toggle-btn').click(function(){
+    $('#btn-open').click(function(){
         var pos = window.scrollY + window.innerHeight - $('#dialog').height();
+        $('body').css('position', 'fixed');
+        $('html').css('position', 'fixed');
         $('#dialog').css('top', pos + 'px');
-        $('#overlay').toggle();
-        $('#dialog').toggle();
+        $('#dialog').css('width', window.innerWidth + 'px');
+        $('#overlay').show();
+        $('#dialog').show();
     });
+
+    $('#btn-close').click(function(){
+        $('body').css('position', 'unset');
+        $('html').css('position', 'unset');
+        $('#overlay').hide();
+        $('#dialog').hide();
+    });
+
   });
