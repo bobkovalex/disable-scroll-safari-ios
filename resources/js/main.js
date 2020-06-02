@@ -12,8 +12,6 @@ $(document).ready(function(){
         $('body').css('position', 'fixed');
         // Set dialog position at bottom of the visible screen
         $('#dialog').css('top', pos + 'px');
-        $('#overlay').css('z-index', '9');
-        $('#dialog').css('z-index', '999');
         // Show dialog & overlay
         $('#overlay').show();
         $('#dialog').show();

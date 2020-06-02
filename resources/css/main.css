@@ -18,22 +18,29 @@ body{
 }
 
 #main-container > #btn-open{
-    width: 100px;
     background-color: #2798e0;
     color: #fff;
-    border-radius: 6px;
-    padding: 10px;
+    border-radius: 50px;
+    padding: 19px 25px;
     text-align: center;
     position: fixed;
-    top: 20px;
-    left: calc(50% - 50px);
+    bottom: 20px;
+    right: 20px;
     z-index: 999;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 #main-container > #pages-container > #page-1, #main-container > #pages-container > #page-2{
     width: calc(100% - 40px);
     height: 100vh;
     padding: 20px;
+}
+
+#main-container > #pages-container > #page-1 > h2, #main-container > #pages-container > #page-2 > h2{
+    width: 100%;
+    text-align: center;
+    margin: 10px auto;
 }
 
 #main-container > #pages-container > #page-1{
@@ -45,7 +52,7 @@ body{
 }
 
 #overlay{
-    background-color: rgba(206, 16, 16, 0.5);
+    background-color: rgba(46, 42, 42, 0.67);
     position: fixed;
     top: 0;
     right: 0;
@@ -65,6 +72,10 @@ body{
     text-align: center;
     display: none;
     z-index: 999;
+}
+
+#dialog:hover{
+    display: inline-block;
 }
 
 #dialog > .text{
