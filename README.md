@@ -6,3 +6,5 @@ permalink: /index.html
 This example demonstrates
 1. How-to disable and enable scroll in Safari (iOS) without loosing current scroll position.
 1. How-to calculate Safari's bottom navbar and avoid overlaping bottom elements in iOS.
+
+[Live Demo](https://bobkovalex.github.io/disable-scroll-safari-ios/)
