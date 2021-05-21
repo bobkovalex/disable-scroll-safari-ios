@@ -1,6 +1,3 @@
----
-permalink: /index.html
----
 ## How-to disable scroll in Safari/Chrome for iOS & Android
 
 This example demonstrates
